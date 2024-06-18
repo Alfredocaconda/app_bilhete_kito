@@ -102,7 +102,7 @@
                                 <li class="">
                                     <a href="{{route('horario.index')}}" class="">
                                         <i class="fa fa-clock"></i>
-                                        <span class="ml-3">Horarios de Vigens</span>
+                                        <span class="ml-3">Horarios de Viagens</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -110,7 +110,7 @@
                                 <li class="">
                                     <a href="{{route('viagen.index')}}" class="">
                                         <i class="fa fa-suitcase-rolling"></i>
-                                        <span class="ml-3">Vigens</span>
+                                        <span class="ml-3">Viagens</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
