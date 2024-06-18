@@ -1,0 +1,119 @@
+.header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    a{
+        font-size: 30px;
+    }
+}
+
+.base-rotas{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .rotas{
+        border: 1px solid dimgray;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background-color: #e9e9e9;
+        h4{
+            font-size: 14pt;
+            line-height: 20px;
+            font-weight: 200;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}
+
+.base{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .bilhete{
+        width: 40%;
+        border: 1px solid dimgray;
+        border-radius: 8px;
+        .baseTop{
+            width: 100%;
+            background-color: rgb(0, 162, 255);
+            color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            h5{
+                color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .corpo{
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            p{
+                font-size: 20px;
+            }
+            table{
+                width: 100%;
+                thead{
+                    tr{
+                        th{
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .musaico{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 40px;
+        }
+    }
+}
+
+.acentos{
+    padding: 10px;
+    .lugarBase{
+        margin-bottom: 10px;
+        .lugar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #0077ff;
+            background-color: #0077ff;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .lugar-diseble{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #484949;
+            background-color: #484949;
+            color: #ffffff;
+            border-radius: 3px;
+        }
+    }
+}
