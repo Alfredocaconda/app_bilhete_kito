@@ -46,6 +46,7 @@
                     table{
                         width: 100%;
                         thead{
+                            
                             tr{
                                 th{
                                     text-align: center;
@@ -54,6 +55,7 @@
                         }
                         tbody{
                             tr{
+                               
                                 td{
                                     text-align: center;
                                 }
@@ -78,8 +80,8 @@
                 <div class="head-body">
                     <div class="container-fluid base">
                         <div class="bilhete">
-                            <div class="baseTop">
-                                <i class="fa fa-bus"></i><h5>bilhete Macon</h5><i class="fa fa-bus"></i>
+                            <div class="baseTop" style="text-align: center;">
+                                <i class="fa fa-bus"></i><h5>Bilhete Macon</h5><i class="fa fa-bus"></i>
                             </div>
                              <div class="corpo">
                                <p>Nome: <b>{{Auth::user()->cliente->nome}}</b></p>
@@ -89,14 +91,14 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Hora</th>
+                                            <th>Embarque</th>
                                             <th>Acento</th>
                                             <th>Carro</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('H:i') }}</td>
+                                        <tr style="text-align: center;">
+                                            <td>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('Y-m-d / H:i') }}</td>
                                             <td>{{$valor->acento}}</td>
                                             <td>{{$valor->viagen->carro->numero}}</td>
                                         </tr>
