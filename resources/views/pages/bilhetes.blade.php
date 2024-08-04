@@ -6,7 +6,7 @@
              <div class="card">
                 <div class="card-header d-flex justify-content-between">
                    <div class="header-title">
-                      <h4 class="card-title">Lista de Bilhetes Comprados</h4>
+                      <h4 class="card-title">Lista de Bilhetes Reservados</h4>
                       <a href="{{route('client.index')}}" ><i class="fa fa-plus-circle"></i></a>
                    </div>
                 </div>
@@ -36,7 +36,7 @@
                                     <td>{{$valor->acento}}</td>
                                     <td><b>{{number_format($valor->viagen->horario->rotas->preco,0,',',' ')}} Kz</b></td>
                                     <td>{{$valor->estado}}</td>
-                                   
+
                                 </tr>
                             @endforeach
                          </tbody>
@@ -48,5 +48,5 @@
        </div>
     </div>
 
-   
+
 @endsection
