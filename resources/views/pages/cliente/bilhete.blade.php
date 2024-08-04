@@ -23,7 +23,6 @@
                     border-top-left-radius: 8px;
                     border-top-right-radius: 8px;
                     padding: 5px;
-                    text-align: center
                     margin-bottom: 20px;
                     h5{
                         color: white;
@@ -46,7 +45,6 @@
                     table{
                         width: 100%;
                         thead{
-                            
                             tr{
                                 th{
                                     text-align: center;
@@ -55,7 +53,6 @@
                         }
                         tbody{
                             tr{
-                               
                                 td{
                                     text-align: center;
                                 }
@@ -80,7 +77,7 @@
                 <div class="head-body">
                     <div class="container-fluid base">
                         <div class="bilhete">
-                            <div class="baseTop" style="text-align: center;">
+                            <div class="baseTop">
                                 <i class="fa fa-bus"></i><h5>Bilhete Macon</h5><i class="fa fa-bus"></i>
                             </div>
                              <div class="corpo">
@@ -91,18 +88,21 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Embarque</th>
+                                            <th>Hora</th>
                                             <th>Acento</th>
                                             <th>Carro</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr style="text-align: center;">
-                                            <td>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('Y-m-d / H:i') }}</td>
+                                        <tr>
+                                            <td>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('H:i') }}</td>
                                             <td>{{$valor->acento}}</td>
                                             <td>{{$valor->viagen->carro->numero}}</td>
                                         </tr>
                                     </tbody>
+                                    <p>Caro Cliente a sua reserva tem duração de 24h para o efeito do Pagamento na agencia mas proxima!
+                                        Macon o seu destino é o nosso objectivo!
+                                        Obrigado pela escolha.</p>
                                 </table>
                             </div>
                         </div>

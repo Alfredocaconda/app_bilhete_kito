@@ -75,7 +75,7 @@
                               </div>
                           </div>
                           <div class="form-group">
-                              <label for="matricula">Matriculo Carro</label>
+                              <label for="matricula">Matricula do Carro</label>
                               <div class="form-input">
                                  <div class="form-input">
                                     <input type="text" maxlength="13" required class="form-control" name="matricula" id="matricula">

@@ -14,7 +14,7 @@
                 <div class="container-fluid base">
                     <div class="bilhete">
                         <div class="baseTop">
-                            <i class="fa fa-bus"></i><h5>bilhete Macon</h5><i class="fa fa-bus"></i>
+                            <i class="fa fa-bus"></i><h5>Bilhete Macon</h5><i class="fa fa-bus"></i>
                         </div>
                         <div class="corpo">
                             <p>Nome: <b>{{Auth::user()->name}}</b></p>

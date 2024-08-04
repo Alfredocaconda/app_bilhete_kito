@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="right-list index-list-scrollbar">
-            <a href="" title="">
+            <a href="#" title="">
                 <div class="media iq-option border align-items-center p-3">
                 <div class="bg-success-light rounded p-4">
                     <img src="images/user/04.jpg" class="img-fluid avatar-50" alt="image">
@@ -32,7 +32,7 @@
                 </div>
                 </div>
             </a>
-            <a href="" title="">
+            <a href="#" title="">
                 <div class="media iq-option border align-items-center p-3">
                 <div class="bg-danger-light rounded p-4">
                     <img src="images/user/macon.jpg" class="img-fluid avatar-50" alt="image">
@@ -43,7 +43,7 @@
                 </div>
                 </div>
             </a>
-            <a href="" title="">
+            <a href="#" title="">
                 <div class="media iq-option active border align-items-center p-3">
                 <div class="bg-success-light rounded p-4">
                     <img src="images/user/user-1.jpg" class="img-fluid avatar-50" alt="image">
@@ -54,7 +54,7 @@
                 </div>
                 </div>
             </a>
-            <a href="" title="">
+            <a href="#" title="">
                 <div class="media iq-option border align-items-center p-3">
                 <div class="bg-info-light rounded p-4">
                     <img src="images/options/04.png" class="img-fluid avatar-50" alt="image">
@@ -65,7 +65,7 @@
                 </div>
                 </div>
             </a>
-            <a href="" title="">
+            <a href="#" title="">
                 <div class="media iq-option border align-items-center p-3">
                 <div class="bg-warning-light rounded p-4">
                     <img src="images/user/12.jpg" class="img-fluid avatar-50" alt="image">

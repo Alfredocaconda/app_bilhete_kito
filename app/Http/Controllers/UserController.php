@@ -100,7 +100,6 @@ class UserController extends Controller
         }else{
             return redirect()->route('auth.login');
         }
-      // return redirect()->back()->with("Sucesso","Cliente cadastrado com sucesso");
     }
 
    public function perfil(){
