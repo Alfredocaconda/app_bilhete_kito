@@ -78,7 +78,8 @@
                                         <p>Carro</p>
                                         <b>{{$valor->viagen->carro->numero}}</b>
                                     </div>
-                                    <p>Caro Cliente a sua reserva tem duração de 24h. Para efeito de pagamento dirija-se a uma agência mas próxima.</p>
+                                    <p>Caro Cliente a sua reserva tem duração de 24h.</p> 
+                                    <p>Para efeito de pagamento dirija-se a uma agência mas próxima.</p>
                                     <h2>Bilhete Reservado</h2>
                             </div>
                         </div>
