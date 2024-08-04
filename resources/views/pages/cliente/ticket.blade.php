@@ -39,9 +39,7 @@
                             </table>
 
                         </div>
-                        {{-- <div class="footbutt">
-                            <a href="{{route('acento',$finde->id)}}">Avançar</a>
-                        </div> --}}
+                        
                     </div>
                 </div>
                 <div class="acentos">

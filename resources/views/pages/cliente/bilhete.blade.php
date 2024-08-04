@@ -26,6 +26,7 @@
                     margin-bottom: 20px;
                     h5{
                         color: white;
+
                         margin-left: 10px;
                         margin-right: 10px;
                         font-size: 25px;
@@ -42,23 +43,7 @@
                     p{
                         font-size: 20px;
                     }
-                    table{
-                        width: 100%;
-                        thead{
-                            tr{
-                                th{
-                                    text-align: center;
-                                }
-                            }
-                        }
-                        tbody{
-                            tr{
-                                td{
-                                    text-align: center;
-                                }
-                            }
-                        }
-                    }
+
                 }
                 .musaico{
                     display: flex;
@@ -78,30 +63,23 @@
                     <div class="container-fluid base">
                         <div class="bilhete">
                             <div class="baseTop">
-                                <i class="fa fa-bus"></i><h5>Bilhete Macon</h5><i class="fa fa-bus"></i>
+                                <i class="fa fa-bus"></i><h5 style="text-align: center;">Bilhete Macon</h5><i class="fa fa-bus"></i>
                             </div>
                              <div class="corpo">
                                <p>Nome: <b>{{Auth::user()->cliente->nome}}</b></p>
                                 <p>Partida: <b>{{$valor->viagen->horario->rotas->partida}}</b></p>
                                 <p>Destino: <b>{{$valor->viagen->horario->rotas->destino}} - {{$valor->viagen->horario->local}}</b></p>
                                 <p>Preço: <b>{{number_format($valor->viagen->horario->rotas->preco,0,',',' ')}} Kz</b></p>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Hora</th>
-                                            <th>Acento</th>
-                                            <th>Carro</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('H:i') }}</td>
-                                            <td>{{$valor->acento}}</td>
-                                            <td>{{$valor->viagen->carro->numero}}</td>
-                                        </tr>
-                                    </tbody>
-                                    <p>Caro Cliente a sua reserva tem duração de 24h. Para efeito de pagamento dirija-se a agência mas próxima.</p>
-                                </table>
+                                    <div class="valores">
+                                        <p>Data e Hora </p>
+                                        <b>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('Y-M-d-H:i') }}</b>
+                                        <p >Acento </p>
+                                        <b>{{$valor->acento}}</b>
+                                        <p>Carro</p>
+                                        <b>{{$valor->viagen->carro->numero}}</b>
+                                    </div>
+                                    <p>Caro Cliente a sua reserva tem duração de 24h. Para efeito de pagamento dirija-se a uma agência mas próxima.</p>
+                                    <h2>Bilhete Reservado</h2>
                             </div>
                         </div>
                     </div>
