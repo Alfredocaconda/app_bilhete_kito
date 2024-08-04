@@ -61,7 +61,7 @@
                                 <li class="">
                                     <a href="{{route('funcio.index')}}" class="">
                                         <i class="fa fa-briefcase"></i>
-                                        <span class="ml-3">Funcionário</span>
+                                        <span class="ml-3">Funcionários</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -70,7 +70,7 @@
                                 <li class="">
                                     <a href="{{route('cliente.index')}}" class="">
                                         <i class="fa fa-shopping-cart"></i>
-                                        <span class="ml-3">Cliente</span>
+                                        <span class="ml-3">Clientes</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -110,7 +110,7 @@
                                 <li class="">
                                     <a href="{{route('viagen.index')}}" class="">
                                         <i class="fa fa-suitcase-rolling"></i>
-                                        <span class="ml-3">Vigens</span>
+                                        <span class="ml-3">Viagens</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
