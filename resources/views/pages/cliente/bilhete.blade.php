@@ -100,9 +100,7 @@
                                             <td>{{$valor->viagen->carro->numero}}</td>
                                         </tr>
                                     </tbody>
-                                    <p>Caro Cliente a sua reserva tem duração de 24h para o efeito do Pagamento na agencia mas proxima!
-                                        Macon o seu destino é o nosso objectivo!
-                                        Obrigado pela escolha.</p>
+                                    <p>Caro Cliente a sua reserva tem duração de 24h. Para efeito de pagamento dirija-se a agência mas próxima.</p>
                                 </table>
                             </div>
                         </div>

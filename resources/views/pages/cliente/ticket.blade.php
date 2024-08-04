@@ -88,10 +88,7 @@
                             <label for="">Informações sobre o Bilhete (Opcional) </label>
                             <textarea disabled name="descricao" id="descricao" class="form-control" cols="30"
                             rows="3">
-                            Caro Cliente a sua reserva tem duração de 24h para o efeito do Pagamento na agencia mas proxima!
-                            Macon o seu destino é o nosso objectivo!
-                            Obrigado pela escolha.
-
+                            Caro Cliente a sua reserva tem duração de 24h. Para efeito de pagamento dirija-se a agência mas próxima.
                             </textarea>
                         </div>
                         <div class="form-group">
