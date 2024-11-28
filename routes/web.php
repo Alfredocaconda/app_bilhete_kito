@@ -55,6 +55,8 @@ Route::group(['middleware'=>'auth'],function(){
 
     Route::get('perfil',[UserController::class,'perfil'])->name('perfil');
 
+    Route::post('bilhete/compra/local',[BilheteController::class,'comprar'])->name('bilhete.compra');
+
 });
 Route::group(['prefix'=>'buy','middleware'=>'auth'],function(){
     Route::get('/',function(){

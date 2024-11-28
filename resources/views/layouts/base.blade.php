@@ -61,7 +61,7 @@
                                 <li class="">
                                     <a href="{{route('funcio.index')}}" class="">
                                         <i class="fa fa-briefcase"></i>
-                                        <span class="ml-3">Funcionários</span>
+                                        <span class="ml-3">Funcionário</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -70,7 +70,7 @@
                                 <li class="">
                                     <a href="{{route('cliente.index')}}" class="">
                                         <i class="fa fa-shopping-cart"></i>
-                                        <span class="ml-3">Clientes</span>
+                                        <span class="ml-3">Cliente</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -102,7 +102,7 @@
                                 <li class="">
                                     <a href="{{route('horario.index')}}" class="">
                                         <i class="fa fa-clock"></i>
-                                        <span class="ml-3">Horarios de Viagens</span>
+                                        <span class="ml-3">Horarios de Vigens</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -110,7 +110,7 @@
                                 <li class="">
                                     <a href="{{route('viagen.index')}}" class="">
                                         <i class="fa fa-suitcase-rolling"></i>
-                                        <span class="ml-3">Viagens</span>
+                                        <span class="ml-3">Vigens</span>
                                     </a>
                                         <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                         </ul>
@@ -136,7 +136,7 @@
                                     <li class="">
                                         <a href="{{route('listaC')}}" class="">
                                             <i class="fa fa-ticket-alt"></i>
-                                            <span class="ml-3">Bilhetes Reservado</span>
+                                            <span class="ml-3">Bilhetes Comprados</span>
                                         </a>
                                             <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                             </ul>
@@ -164,13 +164,13 @@
                         </div>
                     @else
                         <div class="navbar-breadcrumb">
-                            <h4>Reserva de Bilhete</h4>
+                            <h4>Compra de Bilhete</h4>
                         </div>
 
                     @endif
               </div>
               <div class="d-flex align-items-center justify-content-between">
-
+                  
                   <div class="d-flex align-items-center">
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
                       <i class="ri-menu-3-line"></i>

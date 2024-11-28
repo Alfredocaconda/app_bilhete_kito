@@ -13,7 +13,7 @@
 
                 </div>
                 <div class="subs-image">
-                    <img src="images/layouts/LOGO-MACON.png" alt="user-image" class="img-fluid">
+                    <img src="images/logo.png" alt="user-image" class="img-fluid">
                 </div>
                 </div>
             </div>

@@ -28,8 +28,8 @@ class Viagen extends Model
         }
         return false;
     }
-    public function acento($viagen_id, $acento):bool{
-        $confirm = Bilhete::where('viagen_id',$viagen_id)->where('acento',$acento)->where('data_viagem',date('Y-m-d'))->first();
+    public static function acento($viagen_id, $acento,$data):bool{
+        $confirm = Bilhete::where('viagen_id',$viagen_id)->where('acento',$acento)->where('data_viagem',$data)->first();
            if($confirm==null){
                 return true;
            }
