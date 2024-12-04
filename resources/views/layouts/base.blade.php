@@ -136,7 +136,7 @@
                                     <li class="">
                                         <a href="{{route('listaC')}}" class="">
                                             <i class="fa fa-ticket-alt"></i>
-                                            <span class="ml-3">Bilhetes Comprados</span>
+                                            <span class="ml-3">Bilhetes Reservados</span>
                                         </a>
                                             <ul id="campaigns" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                             </ul>
