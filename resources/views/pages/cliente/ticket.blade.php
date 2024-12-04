@@ -14,7 +14,7 @@
                 <div class="container-fluid base">
                     <div class="bilhete">
                         <div class="baseTop">
-                            <i class="fa fa-bus"></i><h5>bilhete Macon</h5><i class="fa fa-bus"></i>
+                            <i class="fa fa-bus"></i><h5>Bilhete Macon</h5><i class="fa fa-bus"></i>
                         </div>
                         <div class="corpo">
                             <p>Nome: <b>{{Auth::user()->name}}</b></p>
@@ -44,10 +44,10 @@
                         </div> --}}
                     </div>
                 </div>
-             
+
                 <div class="acentos">
                     <div class="container-fluid base">
-                       
+
                       <form action="{{route('bilhete.store')}}" method="post">
                         @csrf
                         @if(session('Error'))
@@ -79,18 +79,20 @@
                             </div>
                             <div class="musaico">
                                 0
-                            </div>  
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="">Informações sobre o Bilhete (Opcional) </label>
-                            <textarea name="descricao" id="descricao" class="form-control" cols="30" rows="3"></textarea>
+                            <textarea name="descricao" disabled id="descricao" class="form-control" cols="30" rows="3">
+                                Caro cliente a sua Reserva tem a duração de 24h.
+                            </textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary">Comprar</button>
+                            <button class="btn btn-primary">Reservar</button>
                             <a href="{{route('client.index')}}" class="btn btn-danger">Cancelar</a>
                         </div>
                       </form>
-                    </div>    
+                    </div>
                 </div>
             </div>
           </div>

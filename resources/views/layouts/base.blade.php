@@ -164,7 +164,7 @@
                         </div>
                     @else
                         <div class="navbar-breadcrumb">
-                            <h4>Compra de Bilhetes</h4>
+                            <h4>Reserva de Bilhetes</h4>
                         </div>
 
                     @endif
