@@ -39,10 +39,11 @@
                                        @if($valor->estado == "Desativo")
                                           <button class="btn text-white" style="background-color: green">Comprado</button>
                                        @else
-                                          <a href="#Comprar" data-toggle="modal" onclick="comprar({{$valor->id}})"
-                                             class="btn btn-primary " >Reservado</a>
+                                          <a href="#Comprar" data-toggle="modal" onclick="comprar({{$valor->id}})" class="btn btn-primary " >Reservado</a>
                                        @endif
+
                                     </td>
+                                   
                                 </tr>
                             @endforeach
                          </tbody>
@@ -87,5 +88,5 @@
           document.getElementById('id').value = valor;
       }
   </script>
-
+   
 @endsection

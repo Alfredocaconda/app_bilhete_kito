@@ -14,36 +14,40 @@
                 <div class="container-fluid base">
                     <div class="bilhete">
                         <div class="baseTop">
-                            <i class="fa fa-bus"></i>
-                            <h5 style="text-align: center;">Bilhete Macon</h5>
-                            <i class="fa fa-bus"></i>
+                            <i class="fa fa-bus"></i><h5>bilhete Macon</h5><i class="fa fa-bus"></i>
                         </div>
                         <div class="corpo">
-                            <p>Nome: <b>{{Auth::user()->cliente->nome}}</b></p>
-                            <p>Partida: <b>{{$valor->viagen->horario->rotas->partida}}</b></p>
-                            <p>Destino: <b>{{$valor->viagen->horario->rotas->destino}} - {{$valor->viagen->horario->local}}</b></p>
-                            <p>Preço: <b>{{number_format($valor->viagen->horario->rotas->preco,0,',',' ')}} Kz</b></p>
-                                <div class="valores">
-                                    <p>Data e Hora </p>
-                                    <b>{{Carbon\Carbon::parse($valor->viagen->horario->hora)->format('Y-M-d-H:i') }}</b>
-                                    <p >Acento </p>
-                                    <b>{{$valor->acento}}</b>
-                                    <p>Carro</p>
-                                    <b>{{$valor->viagen->carro->numero}}</b>
-                                </div>
-                                <p>Caro Cliente a sua reserva tem duração de 24h.</p>
-                                <p>Para efeito de pagamento dirija-se a uma agência mas próxima.</p>
-                                <h2>Bilhete Reservado</h2>
+                            <p>Nome: <b>{{Auth::user()->name}}</b></p>
+                            <p>Partida: <b>{{$finde->horario->rotas->partida}}</b></p>
+                            <p>Destino: <b>{{$finde->horario->rotas->destino}} - {{$finde->horario->local}}</b></p>
+                            <p>Preço: <b>{{number_format($finde->horario->rotas->preco,0,',',' ')}} Kz</b></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Hora</th>
+                                        <th>Carro</th>
+                                        <th>Acento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{Carbon\Carbon::parse($finde->horario->hora)->format('H:i')}}</td>
+                                        <td>{{$finde->carro->numero}}</td>
+                                        <td>---</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                         </div>
                         {{-- <div class="footbutt">
                             <a href="{{route('acento',$finde->id)}}">Avançar</a>
                         </div> --}}
                     </div>
                 </div>
-
+             
                 <div class="acentos">
                     <div class="container-fluid base">
-
+                       
                       <form action="{{route('bilhete.store')}}" method="post">
                         @csrf
                         @if(session('Error'))
@@ -75,21 +79,18 @@
                             </div>
                             <div class="musaico">
                                 0
-                            </div>
+                            </div>  
                         </div>
                         <div class="form-group">
                             <label for="">Informações sobre o Bilhete (Opcional) </label>
-                            <textarea disabled name="descricao" id="descricao" class="form-control" cols="30" rows="3">
-                                Caro Cliente a sua reserva tem duração de 24h.
-                             Para efeito de pagamento dirija-se a agência mas próxima.
-                            </textarea>
+                            <textarea name="descricao" id="descricao" class="form-control" cols="30" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary">Comprar</button>
                             <a href="{{route('client.index')}}" class="btn btn-danger">Cancelar</a>
                         </div>
                       </form>
-                    </div>
+                    </div>    
                 </div>
             </div>
           </div>
